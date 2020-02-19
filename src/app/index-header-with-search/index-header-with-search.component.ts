@@ -1,3 +1,4 @@
+import { NotFoundComponent } from './../not-found/not-found.component';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ApiRoutingService } from '../api-routing.service';
@@ -45,6 +46,17 @@ export class IndexHeaderWithSearchComponent implements OnInit {
             this.isSearchResultBox = false;
           })
     }
+
+  }
+  pasteItems($val) {
+    if($val.clipboarvalue.value === ''){
+    this.isSearchResultBox = false;
+    this.isNodataFound = true;
+  }
+  else {
+    this.isSearchResultBox = true;
+    this.isNodataFound = false;
+  }
 
   }
 

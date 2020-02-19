@@ -2,7 +2,7 @@ const insta = require('instagram-web-api')
 const latestTweets = require('latest-tweets')
 const YouTube = require('youtube-node')
 const youTube = new YouTube()
-youTube.setKey('AIzaSyCBDJGMkp8BGH8EaBaFL-K8i15tYE8Ky30')
+youTube.setKey('AIzaSyA7Yzedo8Ruy9gEy0E5_psHCxxlEKcSPA4')
 //youtube apikey2-AIzaSyCodsP54aPwsNQkp7nGugEvO6PY9qfyU6Y
 const { mySQLConn } = require('../dbConnectivity/dbConnection')
 
